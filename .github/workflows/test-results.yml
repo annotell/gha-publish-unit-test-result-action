@@ -25,7 +25,7 @@ jobs:
 
       - name: Publish Test Results
         id: test-results
-        uses: EnricoMi/publish-unit-test-result-action/composite@master
+        uses: EnricoMi/publish-unit-test-result-action/composite@4ed2544a83d44ae940c133fd7c891fcc2a19ff2d # master
         with:
           commit: ${{ github.event.workflow_run.head_sha }}
           check_name: Test Results (reference)
